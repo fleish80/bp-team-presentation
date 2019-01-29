@@ -35,20 +35,20 @@ export class FocusTrapComponent implements AfterViewInit {
   }
 
   /* Enables keyboard arrows navigation */
-  @HostListener('window:keyup', ['$event'])
-  keyFunc(event) {
-    if (event.code !== 'Tab') {
-      this.keyManager.onKeydown(event);
-      this.focusMonitor.focusVia(
-        this.keyManager.activeItem.nativeElement,
-        'keyboard'
-      );
-    } else {
-      // 'artificially' updates the active element in case the user uses Tab instead of arrows
-      this.keyManager.onKeydown(event);
-      this.keyManager.setNextItemActive();
-    }
-  }
+  // @HostListener('window:keyup', ['$event'])
+  // keyFunc(event) {
+  //   if (event.code !== 'Tab') {
+  //     this.keyManager.onKeydown(event);
+  //     this.focusMonitor.focusVia(
+  //       this.keyManager.activeItem.nativeElement,
+  //       'keyboard'
+  //     );
+  //   } else {
+  //     // 'artificially' updates the active element in case the user uses Tab instead of arrows
+  //     this.keyManager.onKeydown(event);
+  //     this.keyManager.setNextItemActive();
+  //   }
+  // }
 
   /* Shows the form, puts focus on it and initialize keyboard navigation */
   testA11y() {
