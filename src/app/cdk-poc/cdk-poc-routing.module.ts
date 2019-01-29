@@ -1,3 +1,4 @@
+import { FocusTrapComponent } from './focus-trap/focus-trap.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CdkPocComponent } from './cdk-poc.component';
@@ -5,8 +6,12 @@ import { CdkPocComponent } from './cdk-poc.component';
 const routes: Routes = [
   {
     path: '',
-    component: CdkPocComponent,
+    component: FocusTrapComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'focus-trap',
+    component: FocusTrapComponent,
   }
 ];
 
