@@ -29,9 +29,9 @@ export class FocusTrapComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit() {
-    this.keyManager = new ListKeyManager(this.elementChild);
-    this.keyManager.withHorizontalOrientation('ltr'); // Arrow navigation options
-    this.keyManager.withWrap(); // Arrow navigation options
+    // this.keyManager = new ListKeyManager(this.elementChild);
+    // this.keyManager.withHorizontalOrientation('ltr'); // Arrow navigation options
+    // this.keyManager.withWrap(); // Arrow navigation options
   }
 
   /* Enables keyboard arrows navigation */
@@ -55,6 +55,6 @@ export class FocusTrapComponent implements AfterViewInit {
     this.element.nativeElement.hidden = false;
     const focusTrap = this.focusTrap.create(this.element.nativeElement); // creates a focus trap region
     focusTrap.focusInitialElement(); // Moves the focus in the form (by default the first field)
-    this.keyManager.setFirstItemActive(); // Sets the element we focused on as 'active' to the KeyManager
+    // this.keyManager.setFirstItemActive(); // Sets the element we focused on as 'active' to the KeyManager
   }
 }

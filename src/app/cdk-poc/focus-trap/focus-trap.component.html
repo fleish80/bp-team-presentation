@@ -1,15 +1,13 @@
-<button (click)="testA11y()"> Test A11y! </button>
-<div #element role="dialog" cdkTrapFocus>
-  <label>Sample field</label>
+<button (click)="testA11y()">Test</button>
+<div #element cdkTrapFocus>
   <input>
-  <label>Focus Trap starts here</label>
+  <input cdkFocusRegionStart>
+  <input >
+  <input cdkFocusInitial>
+  <input >
   <input>
-  <label>Sample field</label>
   <input>
-  <label>Focus Trap (should) end here</label>
-  <input>
-  <label>Sample field</label>
+  <input cdkFocusRegionEnd>
   <input>
 </div>
-<label>Not in range</label>
-  <input>
+
