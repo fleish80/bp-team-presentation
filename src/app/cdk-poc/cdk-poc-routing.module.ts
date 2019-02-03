@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CdkPocComponent } from './cdk-poc.component';
 import { DescendantKeyComponent } from './descendant-key/descendant-key.component';
+import { FilterPipe } from './descendant-key/filter.pipe1';
 
 const routes: Routes = [
   {
@@ -22,7 +23,6 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
   imports: [
     RouterModule.forChild(routes)
   ],
