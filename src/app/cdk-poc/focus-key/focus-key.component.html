@@ -1,0 +1,11 @@
+<section class="list-group"
+  (keydown)="onKeydown($event)"
+  tabindex="0">
+	<app-list-item-focus *ngFor="let user of users"
+    [item]="user" class="list-group-item">
+		{{user.name}}
+	</app-list-item-focus>
+</section>
+
+<p style="margin-top: 1em" *ngIf="model">Model: {{model}}</p>
+

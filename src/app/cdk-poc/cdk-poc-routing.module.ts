@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CdkPocComponent } from './cdk-poc.component';
 import { DescendantKeyComponent } from './descendant-key/descendant-key.component';
-import { FilterPipe } from './descendant-key/filter.pipe1';
+import { FocusKeyComponent } from './focus-key/focus-key.component';
 
 const routes: Routes = [
   {
@@ -17,6 +17,10 @@ const routes: Routes = [
       {
         path: 'descendant-key',
         component: DescendantKeyComponent,
+      },
+      {
+        path: 'focus-key',
+        component: FocusKeyComponent,
       }
     ]
   }
