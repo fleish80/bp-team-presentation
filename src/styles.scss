@@ -1,16 +1,3 @@
-// nav {
-//   display: flex;
-//   align-items: center;
-//   a {
-//     margin: 0 5px;
-//     width: 300px;
-//     height: 50px;
-//     border: 1px solid black;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
 nav {
     padding-bottom: 10px;
     a {
@@ -36,4 +23,22 @@ nav {
         position: relative;
         top: 1px;
     }
+}
+
+.cdk-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // Avoid browsers rendering the focus ring in some cases.
+  outline: 0;
+
+  // Avoid some cases where the browser will still render the native controls (see #9049).
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
