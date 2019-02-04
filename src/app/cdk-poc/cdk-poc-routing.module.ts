@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CdkPocComponent } from './cdk-poc.component';
 import { DescendantKeyComponent } from './descendant-key/descendant-key.component';
 import { FocusKeyComponent } from './focus-key/focus-key.component';
+import { FocusMonitorComponent } from './focus-monitor/focus-monitor.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'focus-key',
         component: FocusKeyComponent,
+      },
+      {
+        path: 'focus-monitor',
+        component: FocusMonitorComponent,
       }
     ]
   }
