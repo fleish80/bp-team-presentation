@@ -1,3 +1,4 @@
+import { LiveAnnouncerComponent } from './live-announcer/live-announcer.component';
 import { FocusTrapComponent } from './focus-trap/focus-trap.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'focus-monitor',
         component: FocusMonitorComponent,
+      },
+      {
+        path: 'live-annoucer',
+        component: LiveAnnouncerComponent,
       }
     ]
   }

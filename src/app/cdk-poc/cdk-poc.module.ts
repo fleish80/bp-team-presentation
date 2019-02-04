@@ -10,10 +10,11 @@ import { FilterPipe } from './descendant-key/filter.pipe';
 import { FocusKeyComponent } from './focus-key/focus-key.component';
 import { ListItemFocusComponent } from './focus-key/list-item-focus/list-item-focus.component';
 import { FocusMonitorComponent } from './focus-monitor/focus-monitor.component';
+import { LiveAnnouncerComponent } from './live-announcer/live-announcer.component';
 
 @NgModule({
   declarations: [CdkPocComponent, FocusTrapComponent, DescendantKeyComponent, ListItemComponent,
-    ListItemFocusComponent, FilterPipe, FocusKeyComponent, FocusMonitorComponent],
+    ListItemFocusComponent, FilterPipe, FocusKeyComponent, FocusMonitorComponent, LiveAnnouncerComponent],
   imports: [
     CommonModule,
     CdkPocRoutingModule,
