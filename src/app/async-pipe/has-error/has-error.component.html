@@ -1,3 +1,12 @@
-<p>
-  has-error works!
-</p>
+<div *ngIf="(user$ | async) as users; else loading">
+  <p class="error-message">{{ error }}</p>
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user.name }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loading>
+  <p class="loading-message">Loading users...</p>
+</ng-template>

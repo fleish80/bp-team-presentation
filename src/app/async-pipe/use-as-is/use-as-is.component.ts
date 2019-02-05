@@ -15,7 +15,7 @@ export class UseAsIsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.user$ = interval(3000).pipe(
+    this.user$ = interval(2000).pipe(
       switchMap(() => of(users))
     );
   }
