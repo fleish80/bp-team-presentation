@@ -1,3 +1,11 @@
-<p>
-  use-as-is works!
-</p>
+<div *ngIf="(user$ | async) as users; else loading">
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user.name }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loading>
+  Loading stuff...
+</ng-template>
