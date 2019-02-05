@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'cdk-poc',
     loadChildren: './cdk-poc/cdk-poc.module#CdkPocModule',
   },
+  {
+    path: 'async-pipe',
+    loadChildren: './async-pipe/async-pipe.module#AsyncPipeModule',
+  },
 ];
 
 @NgModule({

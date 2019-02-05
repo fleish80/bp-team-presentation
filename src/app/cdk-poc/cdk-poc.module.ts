@@ -19,7 +19,6 @@ import { LiveAnnouncerComponent } from './live-announcer/live-announcer.componen
     CommonModule,
     CdkPocRoutingModule,
     A11yModule
-  ],
-  exports: [CdkPocComponent]
+  ]
 })
 export class CdkPocModule { }
