@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'async-pipe',
     loadChildren: './async-pipe/async-pipe.module#AsyncPipeModule',
   },
+  {
+    path: 'reactive-form',
+    loadChildren: './reactive-form/reactive-form.module#ReactiveFormModule',
+  },
 ];
 
 @NgModule({
