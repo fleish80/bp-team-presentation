@@ -1,3 +1,6 @@
-<p>
-  form-control-name works!
-</p>
+<section [formGroup]="formGroup">
+  <label for="message">Message</label>
+  <input id="message" formControlName="name">
+  <p *ngIf="formGroup.get('name').value === 'client'" class="client-message">{{clientMessage}}</p>
+  <p class="server-message">{{serverMessage}}</p>
+</section>
